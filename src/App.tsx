@@ -1,35 +1,26 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-
-function App() {
-  const [count, setCount] = useState(0)
-
+const App = () => {
   return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+    <div className="flex flex-col min-h-screen">
+      <header>
+        <div className="container mx-auto px-4 py-4 bg-white my-4">
+          <p className="flex items-center space-x-1 text-blue-600">
+            <span>BlueBell</span>
+          </p>
+        </div>
+      </header>
+      <div className="flex flex-grow flex-row container mx-auto px-4 py-6 bg-white">
+        <section>Section 1</section>
+        <section>Section 2</section>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
-}
+      <footer>
+        <div className="container mx-auto px-4 py-4 bg-white my-4">
+          <p className="flex items-center space-x-1 text-gray-600">
+            <span>All rights reserved</span>
+          </p>
+        </div>
+      </footer>
+    </div>
+  );
+};
 
-export default App
+export default App;
