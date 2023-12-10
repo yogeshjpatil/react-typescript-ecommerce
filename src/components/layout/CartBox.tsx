@@ -4,11 +4,17 @@ import CartEmpty from "../../assets/images/cart/cart-empty.png";
 const CartBox = () => {
   return (
     <>
-      <div className="position-relative">
-        <img src={CartEmpty} className="show" />
+      <div className="cart-box">
+        <img src={CartEmpty} className="cart-button" />
 
-        <div className="list-categories">
-          <span>Your Cart is Empty</span>
+        <div className="cart-dropdown">
+          <ul>
+            <li>Cart item 1</li>
+            <li>Cart item 2</li>
+            <li>Cart item 3</li>
+            <li>Cart item 4</li>
+            <li>Cart item 5</li>
+          </ul>
         </div>
       </div>
     </>

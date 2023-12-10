@@ -11,11 +11,20 @@ const Header = () => {
             <a className="flex space-x-1" href="/">
               <img src={logo} />
             </a>
+            <div className="flex">
+              <ol>
+                <li>EN</li>
+                <li>Fr</li>
+              </ol>
+            </div>
             <div className="flex-1 ml-20">
               <SearchBox />
             </div>
-            <div className="flex-1 align-middle justify-center">
+            <div className="flex px-4 py-4 ml-20">
               <CartBox />
+            </div>
+            <div className="flex px-4 py-4">
+              <a>Sign In</a>
             </div>
           </div>
         </div>

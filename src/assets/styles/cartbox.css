@@ -1,14 +1,23 @@
-.show:hover + .list-categories{
-    max-height: inherit;
-    opacity: 1;
-  }
-  
-  .list-categories{
-    list-style-type: none;
-    padding: 0px;
-    margin: 0px;
-    max-height: 0px;
-    opacity: 0;
-    overflow: hidden;
-    transition: opacity 300ms ease;
-  }
+.cart-box {
+    position: relative;
+}
+
+.cart-dropdown {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+    right:0;
+    left:auto;
+}
+
+.cart-button:hover + .cart-dropdown {
+    display: block;
+}
+
+.cart-dropdown:hover{
+    display: block;
+}
